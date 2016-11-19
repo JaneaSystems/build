@@ -28,6 +28,9 @@ hosts:
 
   - release:
 
+    - azure:
+        msft-ubuntu1604-x64-1: {ip: 40.114.95.73}
+
     - digitalocean:
         centos5-x64-1: {ip: 162.243.217.142}
 

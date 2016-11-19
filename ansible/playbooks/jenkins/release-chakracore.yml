@@ -1,0 +1,29 @@
+---
+
+#
+# create Node-ChakraCore release server for xplat branch
+#
+
+- hosts:
+   - release-azure_msft-ubuntu1604-x64-1
+
+  roles:
+    - bootstrap
+    - baselayout
+    - package-upgrade
+    - jenkins-worker
+
+  vars:
+    - chakracore_packages: [ 'build-essential', 'cmake', 'clang', 'libunwind-dev', 'libicu-dev' ]
+
+  pre_tasks:
+    - name: check if secret is properly set
+      fail:
+      failed_when: not secret
+
+  tasks:
+    - name: install chakracore-related packages
+      package: name="{{ package }}" state=present
+      loop_control:
+        loop_var: package
+      with_items: "{{ chakracore_packages }}"
