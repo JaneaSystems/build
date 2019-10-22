@@ -37,7 +37,7 @@ Supported versions for building Node.js from source.
 | v10             | 2017 <sup>[5]</sup>                 |
 | v11             | 2017                                |
 | v12             | 2017, 2019 <sup>[8] [9]</sup>       |
-| v13             | 2017, 2019                          |
+| v13             | 2017, 2019 <sup>[9]</sup>           |
 
 ## For building Node.js Addons
 
@@ -53,6 +53,8 @@ Supported versions for building Node.js addons. End-users should have one of the
 | v9              | 2015, VCBT2015, 2017 <sup>[7]</sup>       |
 | v10             | 2015, VCBT2015, 2017                      |
 | v11             | 2015, VCBT2015, 2017                      |
+| v12             | 2015, VCBT2015, 2017, 2019 <sup>[10]</sup> |
+| v13             | 2015, VCBT2015, 2017, 2019                |
 
 ## Official Releases
 
@@ -88,8 +90,9 @@ These versions are used to build the official releases.
 5. Support for Visual Studio 2015 was removed in v10.0.0.
    - Pull Request: https://github.com/nodejs/node/pull/16868
    - Pull Request: https://github.com/nodejs/node/pull/16969
-6. Support for **building addons** with Visual Studio 2017 was added in v8.0.0.
+6. Support for **building addons** with Visual Studio 2017 was added in v8.0.0 (node-gyp v3.6.0).
    - Pull Request: https://github.com/nodejs/node-gyp/pull/1130
+   - Pull Request: https://github.com/nodejs/node/pull/12480
 7. Support for **building addons** with Visual Studio 2013 was removed in v9.0.0.
    - Issue: https://github.com/nodejs/node/issues/13372
    - Pull Request: https://github.com/nodejs/node/pull/14764
@@ -97,3 +100,6 @@ These versions are used to build the official releases.
    - Pull Request: https://github.com/nodejs/node/pull/28781
 9. Support for Visual Studio 2019 by default was added in (v12 VERSION) and (v13 VERSION).
    - Pull Request: https://github.com/nodejs/node/pull/30022
+10. Support for **building addons** with Visual Studio 2019 was added in v12.8.0 (node-gyp 5.0.0).
+   - Pull Request: https://github.com/nodejs/node-gyp/pull/1762
+   - Pull Request: https://github.com/nodejs/node/pull/28853
