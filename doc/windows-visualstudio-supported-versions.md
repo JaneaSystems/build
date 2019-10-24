@@ -98,7 +98,7 @@ These versions are used to build the official releases.
    - Pull Request: https://github.com/nodejs/node/pull/14764
 8. Support for Visual Studio 2019 was added behind a flag in v12.8.0.
    - Pull Request: https://github.com/nodejs/node/pull/28781
-9. Support for Visual Studio 2019 by default was added in (v12 VERSION) and (v13 VERSION).
+9. Support for Visual Studio 2019 by default was added in (v12 VERSION) and v13.0.1.
    - Pull Request: https://github.com/nodejs/node/pull/30022
 10. Support for **building addons** with Visual Studio 2019 was added in v12.8.0 (node-gyp 5.0.0).
     - Pull Request: https://github.com/nodejs/node-gyp/pull/1762
