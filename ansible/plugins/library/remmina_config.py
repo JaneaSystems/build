@@ -49,7 +49,10 @@ scale=1
 resolution_mode=0
 resolution_width=1280
 resolution_height=720
+window_width=865
+window_height=480
 window_maximize=1
+viewmode=1
 
 '''
 
