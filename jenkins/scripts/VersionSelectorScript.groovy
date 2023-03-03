@@ -83,7 +83,7 @@ def buildExclusions = [
   [ /vs2015-x86$/,                    testType,    gte(10)       ], // compile arm64/x86 only once
   [ /vs2017-x86$/,                    testType,    ltGte(10, 14) ],
   [ /vs2019-x86$/,                    testType,    lt(14)        ],
-  [ /vs2019-arm64$/,                  testType,    lt(14)        ],
+  [ /vs2019-arm64$/,                  testType,    lt(20)        ], // ARM64 is supported since 14 without MSI
   // VS versions supported to build add-ons
   [ /vs2013-COMPILED_BY/,             testType,    gte(9)        ],
   [ /vs2015-COMPILED_BY/,             testType,    gte(19)       ],

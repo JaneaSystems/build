@@ -19,8 +19,7 @@ if not defined DISABLE_CLCACHE if exist C:\clcache\dist\clcache_main\clcache_mai
 
 :: Call vcbuild
 if "%nodes:~-6%" == "-arm64" (
-  :: Building MSI is not yet supported for ARM64
-  set "VCBUILD_EXTRA_ARGS=arm64 release"
+  set "VCBUILD_EXTRA_ARGS=arm64 %VCBUILD_EXTRA_ARGS%"
 ) else if "%nodes:~-4%" == "-x86" (
   set "VCBUILD_EXTRA_ARGS=x86 %VCBUILD_EXTRA_ARGS%"
 ) else (
