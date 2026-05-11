@@ -43,7 +43,7 @@ def buildExclusions = [
   [ /vs2019(-\w+)?$/,                 testType,    gte(22)       ],
   [ /vs2022-x86$/,                    testType,    gte(24)       ], // x86 was dropped on Windows in v23
   [ /vs2022(?!_clang)(-\w+)?$/,       testType,    gte(24)       ], // MSVC was dropped on Windows in v24
-  [ /vs2022_clang(-\w+)?$/,           testType,    lt(24)        ], // ClangCL support was added in v23
+  [ /vs2022_clang_test(-\w+)?$/,      testType,    lt(24)        ], // ClangCL support was added in v23
   // VS versions supported to build add-ons
   [ /vs2017-COMPILED_BY/,             testType,    gte(22)       ],
 
